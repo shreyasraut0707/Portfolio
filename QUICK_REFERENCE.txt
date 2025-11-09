@@ -1,0 +1,173 @@
+# 🚀 QUICK REFERENCE CARD
+
+## Your Portfolio Deployment in 3 Steps
+
+### Step 1: Create GitHub Repo
+```
+👉 https://github.com/new
+Name: portfolio
+Visibility: Public
+Create ✓
+```
+
+### Step 2: Push to GitHub
+```bash
+git remote add origin https://github.com/shreyasraut0707/portfolio.git
+git push -u origin main
+```
+
+### Step 3: Deploy on Vercel
+```
+👉 https://vercel.com
+Sign up with GitHub ✓
+New Project ✓
+Select "portfolio" repo ✓
+Deploy ✓
+```
+
+**🎉 Done! Your portfolio is LIVE!**
+
+---
+
+## Your URLs
+
+| Purpose | URL |
+|---------|-----|
+| GitHub Repo | https://github.com/shreyasraut0707/portfolio |
+| Your Portfolio (After Deploy) | https://portfolio-{name}.vercel.app |
+| Vercel Dashboard | https://vercel.com/dashboard |
+
+---
+
+## Essential Commands
+
+```bash
+# Test locally
+npm run dev
+
+# Build for production
+npm run build
+
+# Git workflow
+git add .
+git commit -m "Your message"
+git push
+
+# Check git status
+git status
+```
+
+---
+
+## 📊 Timeline
+
+| Task | Time |
+|------|------|
+| Create GitHub account | 2 min |
+| Create repository | 1 min |
+| Push code to GitHub | 1 min |
+| Create Vercel account | 1 min |
+| Deploy on Vercel | 2-3 min |
+| Share portfolio | 5 min |
+| **TOTAL** | **~15 minutes** |
+
+---
+
+## 🎯 Share On
+
+- [ ] LinkedIn (Add to headline + About)
+- [ ] GitHub profile
+- [ ] Email signature
+- [ ] Twitter/X
+- [ ] WhatsApp status
+- [ ] Email to recruiters
+- [ ] Resume/CV
+
+---
+
+## 💡 Pro Tips
+
+✅ Update portfolio → Push to GitHub → Vercel auto-redeploys
+✅ Get custom domain (~$10/year) → More professional
+✅ Add portfolio to LinkedIn → Recruiters will see it
+✅ Update frequently → Shows active development
+
+---
+
+## 🆘 If Something Goes Wrong
+
+| Problem | Solution |
+|---------|----------|
+| Build fails | Run `npm run build` locally first |
+| Push fails | Check `git status` and `git config --global user.email` |
+| Vercel error | Check GitHub permissions, reconnect |
+| URL not working | Wait 5 minutes, hard refresh (Ctrl+Shift+R) |
+
+---
+
+## 📞 Your Deployment Resources
+
+**This Portfolio:**
+- 📁 Location: `c:\Users\Shreyas\OneDrive\Desktop\portfolio`
+- 🌐 GitHub: https://github.com/shreyasraut0707
+- 📧 Email: shreyasraut0007@gmail.com
+
+**Deployment Platforms:**
+- Vercel: https://vercel.com/docs
+- Netlify: https://docs.netlify.com
+
+**Getting Help:**
+1. Check QUICK_DEPLOY_GUIDE.md
+2. Check DEPLOYMENT.md
+3. Check GIT_SETUP.md
+4. Google your error message
+
+---
+
+## ✅ Pre-Deployment Checklist
+
+- [ ] Tested locally: `npm run dev`
+- [ ] Build works: `npm run build`
+- [ ] Profile photo present
+- [ ] All content is correct
+- [ ] Responsive design looks good
+- [ ] All links work
+- [ ] Git initialized
+- [ ] GitHub account created
+- [ ] Ready to push!
+
+---
+
+## 🎉 YOU'RE READY!
+
+```
+Your portfolio is built ✓
+Your portfolio is beautiful ✓
+Your portfolio is ready ✓
+Your portfolio is waiting... ✓
+
+Next: Go to QUICK_DEPLOY_GUIDE.md
+Time to deployment: ~15 minutes
+```
+
+---
+
+## 🌟 After Deployment
+
+```
+✅ Portfolio is live!
+✅ Get your Vercel URL
+✅ Share everywhere!
+✅ Recruiters will find you
+✅ Opportunities come your way
+✅ Your dream job awaits! 🚀
+```
+
+---
+
+**NOW GO DEPLOY YOUR PORTFOLIO! 🚀**
+
+Questions? Read the documentation files:
+- QUICK_DEPLOY_GUIDE.md
+- DEPLOYMENT_READY.md
+- DOCS_OVERVIEW.md
