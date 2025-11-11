@@ -39,7 +39,8 @@ export const projects: Project[] = [
       'Designed for seamless integration with PM Internship Scheme portal',
       'Mobile-friendly web interface',
       'AI-powered recommendation system'
-    ]
+    ],
+    link: 'https://github.com/shreyasraut0707/pm-internship-engine'
   },
   {
     id: '2',
@@ -63,7 +64,8 @@ export const projects: Project[] = [
       'Supports multiple news sources and formats',
       'Vectorized search using FAISS for fast retrieval',
       'LLM-powered question answering system'
-    ]
+    ],
+    link: 'https://github.com/shreyasraut0707/insightbot'
   }
 ];
 

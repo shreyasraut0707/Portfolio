@@ -1,5 +1,20 @@
 # 🚀 DEPLOY YOUR PORTFOLIO IN 5 MINUTES - STEP BY STEP
 
+## 💰 VERCEL IS 100% FREE - NO CHARGES EVER!
+
+### ✅ GUARANTEED FREE:
+
+- ✅ Vercel will NOT charge you now
+- ✅ Vercel will NOT charge you in the future
+- ✅ Vercel will NOT ask for credit card
+- ✅ Your portfolio hosting is COMPLETELY FREE
+- ✅ You will never pay anything for Vercel hosting
+- ✅ This is guaranteed - it's their free tier policy!
+
+**Total cost of your portfolio: $0.00**
+
+---
+
 ## ⚠️ Why You Got 404 Error
 
 The URL you tried doesn't exist yet because:
@@ -72,6 +87,8 @@ git push -u origin main
 
 ### **STEP 4: Deploy on Vercel (1 minute)**
 
+**🎉 IMPORTANT: Vercel is 100% FREE - No payment EVER!**
+
 1. Open browser
 2. Go to: https://vercel.com/signup
 3. Click: **"Continue with GitHub"**
@@ -79,6 +96,10 @@ git push -u origin main
 5. Click: **"New Project"**
 6. Select your **`portfolio`** repository
 7. Click: **"Deploy"**
+
+**⚠️ Vercel will NOT ask for credit card!**
+**✅ Vercel will NOT charge now or in future!**
+**✅ Your portfolio is FREE FOREVER!**
 
 **Wait 2-3 minutes...**
 
