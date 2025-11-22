@@ -131,14 +131,16 @@ export const certifications: Certification[] = [
     id: '2',
     title: 'Database Programming with SQL',
     issuer: 'Oracle Academy',
-    date: 'Mar 2024'
+    date: 'Mar 2024',
+    link: '/Oracle_Certificate.pdf'
   },
   {
     id: '3',
     title: 'Deep Certificate in Python Programming',
     issuer: 'MKCL',
     date: '2024',
-    details: '120 hours, 99/100, Credit Level 4.5 (National Credit Framework)'
+    details: '120 hours, 99/100, Credit Level 4.5 (National Credit Framework)',
+    link: '/MKCL_Certificate.pdf'
   }
 ];
 
