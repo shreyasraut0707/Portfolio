@@ -85,25 +85,35 @@ const Education: React.FC<EducationProps> = ({ education, certifications }) => {
         <div className="certifications-content">
           <h3 className="subsection-title">Certifications</h3>
           <div className="certifications-grid">
-            {certifications.map((cert) => (
-              <div key={cert.id} className="certification-item">
-                <div className="cert-icon">📜</div>
-                <h4 className="cert-title">{cert.title}</h4>
-                <p className="cert-issuer">{cert.issuer}</p>
-                <p className="cert-date">{cert.date}</p>
-                {cert.details && <p className="cert-details">{cert.details}</p>}
-                {cert.link && (
-                  <a
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cert-link"
-                  >
-                    View Certificate →
-                  </a>
-                )}
-              </div>
-            ))}
+            {certifications.map((cert) =>
+              cert.link ? (
+                <a
+                  key={cert.id}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="certification-item certification-clickable"
+                >
+                  <div className="cert-icon">📜</div>
+                  <h4 className="cert-title">{cert.title}</h4>
+                  <p className="cert-issuer">{cert.issuer}</p>
+                  <p className="cert-date">{cert.date}</p>
+                  {cert.details && (
+                    <p className="cert-details">{cert.details}</p>
+                  )}
+                </a>
+              ) : (
+                <div key={cert.id} className="certification-item">
+                  <div className="cert-icon">📜</div>
+                  <h4 className="cert-title">{cert.title}</h4>
+                  <p className="cert-issuer">{cert.issuer}</p>
+                  <p className="cert-date">{cert.date}</p>
+                  {cert.details && (
+                    <p className="cert-details">{cert.details}</p>
+                  )}
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>

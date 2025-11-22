@@ -37,6 +37,12 @@
   position: relative;
 }
 
+.project-card-clickable {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-card::before {
   content: '';
   position: absolute;
