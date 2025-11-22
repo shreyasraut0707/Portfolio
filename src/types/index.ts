@@ -30,6 +30,7 @@ export interface Education {
   duration: string;
   location: string;
   details: string[];
+  link?: string;
 }
 
 export interface Certification {

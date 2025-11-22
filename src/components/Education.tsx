@@ -8,6 +8,7 @@ interface EducationItem {
   duration: string;
   location: string;
   details: string[];
+  link?: string;
 }
 
 interface CertificationItem {
@@ -37,21 +38,44 @@ const Education: React.FC<EducationProps> = ({ education, certifications }) => {
             {education.map((edu) => (
               <div key={edu.id} className="education-item">
                 <div className="education-icon">🎓</div>
-                <div className="education-details">
-                  <h4 className="degree-title">{edu.degree}</h4>
-                  <p className="institution">{edu.institution}</p>
-                  <div className="education-meta">
-                    <span>{edu.duration}</span>
-                    <span>{edu.location}</span>
+                {edu.link ? (
+                  <a
+                    href={edu.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="education-details education-clickable"
+                  >
+                    <h4 className="degree-title">{edu.degree}</h4>
+                    <p className="institution">{edu.institution}</p>
+                    <div className="education-meta">
+                      <span>{edu.duration}</span>
+                      <span>{edu.location}</span>
+                    </div>
+                    {edu.details.length > 0 && (
+                      <ul className="education-details-list">
+                        {edu.details.map((detail, i) => (
+                          <li key={i}>{detail}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </a>
+                ) : (
+                  <div className="education-details">
+                    <h4 className="degree-title">{edu.degree}</h4>
+                    <p className="institution">{edu.institution}</p>
+                    <div className="education-meta">
+                      <span>{edu.duration}</span>
+                      <span>{edu.location}</span>
+                    </div>
+                    {edu.details.length > 0 && (
+                      <ul className="education-details-list">
+                        {edu.details.map((detail, i) => (
+                          <li key={i}>{detail}</li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
-                  {edu.details.length > 0 && (
-                    <ul className="education-details-list">
-                      {edu.details.map((detail, i) => (
-                        <li key={i}>{detail}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
+                )}
               </div>
             ))}
           </div>

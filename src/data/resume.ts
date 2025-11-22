@@ -115,7 +115,8 @@ export const education: Education[] = [
     institution: 'Jayawantrao Sawant Polytechnic',
     duration: 'Dec 2020 – June 2023',
     location: 'Pune, Maharashtra',
-    details: ['Percentage: 84.86%']
+    details: ['Percentage: 84.86%'],
+    link: '/Diploma_Certificate.jpg'
   }
 ];
 

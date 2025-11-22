@@ -65,6 +65,17 @@
   transition: var(--transition);
 }
 
+.education-clickable {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.education-clickable:hover {
+  border-left-color: #4f46e5;
+}
+
 .education-item:hover .education-details {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
