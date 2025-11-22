@@ -130,13 +130,20 @@ export const certifications: Certification[] = [
   },
   {
     id: '2',
+    title: 'Oracle Cloud Infrastructure 2025 Certified Data Science Professional',
+    issuer: 'Oracle',
+    date: '2025',
+    link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=11A4A3E126300C2F814A4E2E9B9B6F2F8D143038F339A68F643F07F59F58D5B8'
+  },
+  {
+    id: '3',
     title: 'Database Programming with SQL',
     issuer: 'Oracle Academy',
     date: 'Mar 2024',
     link: '/Oracle_Certificate.pdf'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Deep Certificate in Python Programming',
     issuer: 'MKCL',
     date: '2024',
