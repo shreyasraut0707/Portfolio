@@ -124,7 +124,8 @@ export const certifications: Certification[] = [
     id: '1',
     title: 'Career Essentials in Generative AI',
     issuer: 'Microsoft & LinkedIn Learning',
-    date: '2024'
+    date: '2024',
+    link: '/GenAI_Certificate.pdf'
   },
   {
     id: '2',

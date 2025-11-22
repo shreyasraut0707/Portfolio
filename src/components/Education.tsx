@@ -16,6 +16,7 @@ interface CertificationItem {
   issuer: string;
   date: string;
   details?: string;
+  link?: string;
 }
 
 interface EducationProps {
@@ -67,6 +68,16 @@ const Education: React.FC<EducationProps> = ({ education, certifications }) => {
                 <p className="cert-issuer">{cert.issuer}</p>
                 <p className="cert-date">{cert.date}</p>
                 {cert.details && <p className="cert-details">{cert.details}</p>}
+                {cert.link && (
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cert-link"
+                  >
+                    View Certificate →
+                  </a>
+                )}
               </div>
             ))}
           </div>

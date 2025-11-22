@@ -38,4 +38,5 @@ export interface Certification {
   issuer: string;
   date: string;
   details?: string;
+  link?: string;
 }
