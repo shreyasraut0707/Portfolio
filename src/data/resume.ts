@@ -31,22 +31,9 @@ export const experiences: Experience[] = [
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'AI-Based Internship Recommendation Engine',
-    technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
-    duration: 'Feb 2025 – Mar 2025',
-    description: 'AI engine suggests PM internships using user profile and location with mobile-friendly web interface.',
-    highlights: [
-      'Designed for seamless integration with PM Internship Scheme portal',
-      'Mobile-friendly web interface',
-      'AI-powered recommendation system'
-    ],
-    link: 'https://github.com/shreyasraut0707/pm-internship-engine'
-  },
-  {
-    id: '2',
     title: 'AI Code Assistant with Fine-Tuned Model',
     technologies: ['Python', 'PyTorch', 'Transformers', 'Streamlit', 'Hugging Face', 'Git'],
-    duration: 'Dec 2024',
+    duration: 'Dec 2025',
     description: 'Fine-tuned CodeGen-350M model on CodeAlpaca-20k dataset achieving 70% code accuracy. Production-ready Streamlit application with dual-mode inference (local + cloud) and complete training pipeline optimized for 4GB VRAM GPUs.',
     highlights: [
       'Fine-tuned on 19,020 high-quality code examples',
@@ -59,10 +46,23 @@ export const projects: Project[] = [
     link: 'https://github.com/shreyasraut0707/LocalCodeAssistant'
   },
   {
+    id: '2',
+    title: 'AI-Based Internship Recommendation Engine',
+    technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
+    duration: 'Mar 2025',
+    description: 'AI engine suggests PM internships using user profile and location with mobile-friendly web interface.',
+    highlights: [
+      'Designed for seamless integration with PM Internship Scheme portal',
+      'Mobile-friendly web interface',
+      'AI-powered recommendation system'
+    ],
+    link: 'https://github.com/shreyasraut0707/pm-internship-engine'
+  },
+  {
     id: '3',
     title: 'News Research Tool',
     technologies: ['Python', 'Streamlit', 'LangChain', 'FAISS', 'Gemini API'],
-    duration: '2024',
+    duration: 'Jan 2025',
     description: 'Streamlit app for news ingestion and AI-powered Q&A with fast retrieval using embeddings and FAISS.',
     highlights: [
       'Supports multiple news sources and formats',
