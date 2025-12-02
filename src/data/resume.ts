@@ -44,15 +44,19 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'AI-Based Invisibility Cloak',
-    technologies: ['Python', 'OpenCV'],
-    duration: 'Aug 2024',
-    description: 'Real-time invisibility effect via color detection and background capture with robust performance under varying lighting.',
+    title: 'AI Code Assistant with Fine-Tuned Model',
+    technologies: ['Python', 'PyTorch', 'Transformers', 'Streamlit', 'Hugging Face', 'Git'],
+    duration: 'Dec 2024',
+    description: 'Fine-tuned CodeGen-350M model on CodeAlpaca-20k dataset achieving 70% code accuracy. Production-ready Streamlit application with dual-mode inference (local + cloud) and complete training pipeline optimized for 4GB VRAM GPUs.',
     highlights: [
-      'Real-time processing capability',
-      'Robust performance under varying lighting conditions',
-      'Advanced computer vision techniques'
-    ]
+      'Fine-tuned on 19,020 high-quality code examples',
+      '60% accuracy improvement over base model',
+      'Complete automated training pipeline with resume capability',
+      'Dual inference modes: Local fine-tuned model + Cloud API fallback',
+      'Model published on Hugging Face Hub for community use',
+      'Memory-optimized for GTX 1650 (4GB VRAM) using BF16 precision'
+    ],
+    link: 'https://github.com/shreyasraut0707/LocalCodeAssistant'
   },
   {
     id: '3',
