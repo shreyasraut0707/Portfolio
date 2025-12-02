@@ -47,19 +47,38 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'AI-Based Internship Recommendation Engine',
-    technologies: ['Python', 'HTML', 'CSS', 'JavaScript'],
-    duration: 'Mar 2025',
-    description: 'AI engine suggests PM internships using user profile and location with mobile-friendly web interface.',
+    title: 'Real-Time AI Chatbot',
+    technologies: ['Next.js', 'Socket.io', 'Node.js', 'Mistral AI', 'Tailwind CSS'],
+    duration: 'Nov 2025',
+    description: 'Next.js-based AI chatbot featuring live streaming responses via Socket.io and OpenRouter API. Implements real-time WebSocket communication with markdown rendering, typing indicators, and mobile-responsive interface.',
     highlights: [
-      'Designed for seamless integration with PM Internship Scheme portal',
-      'Mobile-friendly web interface',
-      'AI-powered recommendation system'
+      'Token-by-token streaming AI responses with no buffering',
+      'WebSocket-powered real-time bidirectional communication',
+      'Complete markdown rendering with code syntax highlighting',
+      'Mobile-first responsive design with connection status',
+      'Dual-server architecture (Next.js frontend + Node.js backend)',
+      'Environment-based configuration with security best practices'
+    ],
+    link: 'https://github.com/shreyasraut0707/Realtime-AI-Chatbot'
+  },
+  {
+    id: '3',
+    title: 'PM Internship Recommendation Engine',
+    technologies: ['Python', 'Flask', 'Scikit-Learn', 'Pandas', 'HTML/CSS'],
+    duration: 'Mar 2025',
+    description: 'Intelligent recommendation system for Prime Minister\'s Internship Scheme matching students with opportunities based on education, skills, and location using TF-IDF algorithm and Flask backend.',
+    highlights: [
+      'TF-IDF machine learning algorithm for personalized matching',
+      '200+ PM internship opportunities across 50+ companies',
+      'Smart education-based filtering for 12+ fields',
+      'Multi-criteria filtering (location, stipend, skills)',
+      'Mobile-responsive UI with Government branding',
+      'Real company career page integrations'
     ],
     link: 'https://github.com/shreyasraut0707/pm-internship-engine'
   },
   {
-    id: '3',
+    id: '4',
     title: 'News Research Tool',
     technologies: ['Python', 'Streamlit', 'LangChain', 'FAISS', 'Gemini API'],
     duration: 'Jan 2025',
