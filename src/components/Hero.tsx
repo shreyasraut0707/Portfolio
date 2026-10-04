@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
               download="Shreyas_Raut_Resume.pdf"
               className="cta-button resume"
             >
-              <span>Download Resume ↓</span>
+              <span>Resume</span>
             </a>
             <a
               href="https://github.com/shreyasraut0707"
