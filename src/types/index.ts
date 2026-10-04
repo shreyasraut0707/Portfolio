@@ -49,3 +49,15 @@ export interface Achievement {
   link?: string;
   date?: string;
 }
+
+export interface Publication {
+  id: string;
+  title: string;
+  date: string;
+  description: string;
+  authors: string;
+  journal: string;
+  volumeInfo: string;
+  researchAreas: string[];
+  link: string;
+}

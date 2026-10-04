@@ -41,14 +41,13 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 
                 <p className="project-description">{project.description}</p>
 
-                <div className="project-highlights">
+                <ul className="project-highlights">
                   {project.highlights.map((highlight, i) => (
-                    <div key={i} className="highlight-item">
-                      <span className="highlight-icon">✓</span>
-                      <span>{highlight}</span>
-                    </div>
+                    <li key={i} className="highlight-item">
+                      {highlight}
+                    </li>
                   ))}
-                </div>
+                </ul>
 
                 <div className="project-technologies">
                   {project.technologies.map((tech) => (
@@ -67,14 +66,13 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 
                 <p className="project-description">{project.description}</p>
 
-                <div className="project-highlights">
+                <ul className="project-highlights">
                   {project.highlights.map((highlight, i) => (
-                    <div key={i} className="highlight-item">
-                      <span className="highlight-icon">✓</span>
-                      <span>{highlight}</span>
-                    </div>
+                    <li key={i} className="highlight-item">
+                      {highlight}
+                    </li>
                   ))}
-                </div>
+                </ul>
 
                 <div className="project-technologies">
                   {project.technologies.map((tech) => (

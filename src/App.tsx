@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Publications from "./components/Publications";
 import Achievements from "./components/Achievements";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
@@ -13,6 +14,7 @@ import {
   skills,
   education,
   certifications,
+  publications,
   achievements,
 } from "./data/resume";
 import "./App.css";
@@ -44,7 +46,7 @@ function App() {
 
     document
       .querySelectorAll(
-        ".skills-section, .experience-section, .projects-section, .achievements-section, .education-section"
+        ".skills-section, .experience-section, .projects-section, .publications-section, .achievements-section, .education-section"
       )
       .forEach((el) => {
         observer.observe(el);
@@ -61,6 +63,7 @@ function App() {
         <Skills skills={skills} />
         <Experience experiences={experiences} />
         <Projects projects={projects} />
+        <Publications publications={publications} />
         <Achievements achievements={achievements} />
         <Education education={education} certifications={certifications} />
       </main>

@@ -42,8 +42,8 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
                   )}
                 </div>
                 <div className="experience-meta">
-                  <span className="meta-item">📅 {exp.duration}</span>
-                  <span className="meta-item">📍 {exp.location}</span>
+                  <span className="meta-item">{exp.duration}</span>
+                  <span className="meta-item">{exp.location}</span>
                 </div>
                 <ul className="experience-description">
                   {exp.description.map((desc, i) => (

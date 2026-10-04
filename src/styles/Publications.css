@@ -1,0 +1,128 @@
+/* ============ Publications — Light Theme ============ */
+
+.publications-section {
+  padding: 3.5rem 2rem;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.publications-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.publication-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--border-subtle);
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.publication-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-hover);
+}
+
+.pub-header {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+}
+
+.pub-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.pub-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.pub-journal {
+  font-size: 0.95rem;
+  color: var(--accent-primary);
+  font-weight: 500;
+  margin: 0 0 0.25rem 0;
+}
+
+.pub-volume {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.pub-section-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pub-tag {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+}
+
+.pub-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pub-authors p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.pub-action {
+  margin-top: 0.5rem;
+}
+
+.pub-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.pub-link:hover {
+  color: var(--accent-purple);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .publications-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .publication-card {
+    padding: 1.5rem;
+  }
+}

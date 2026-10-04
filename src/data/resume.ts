@@ -1,4 +1,4 @@
-import type { Experience, Project, Skill, Education, Certification, Achievement } from '../types';
+import type { Experience, Project, Skill, Education, Certification, Achievement, Publication } from '../types';
 export const experiences: Experience[] = [
   {
     id: '1',
@@ -187,12 +187,17 @@ export const certifications: Certification[] = [
   }
 ];
 
-export const publications = [
+export const publications: Publication[] = [
   {
     id: '1',
-    title: 'Advancing Media Integrity through AI-Powered Fake News Detection',
-    date: 'Mar 2024 – Apr 2024',
-    description: 'Designed and implemented ML model to detect and classify misinformation in digital media content analyzing linguistic patterns and source credibility for real-time accuracy assessments.'
+    title: 'Advancing Media Integrity Through AI-Powered Fake News Detection',
+    date: 'April 2025',
+    description: 'A comprehensive review of AI-powered fake news detection techniques, covering machine learning, deep learning, natural language processing, transformer-based models, and multimodal approaches. The study analyzes existing datasets, methodologies, evaluation techniques, research gaps, and future directions for developing reliable and scalable fake news detection systems.',
+    authors: 'Anurag Mahalpure · Abhishek Marwade · Prathamesh Kadam · Shreyas Raut',
+    journal: 'International Journal of Research and Analytical Reviews (IJRAR)',
+    volumeInfo: 'Volume 12 · Issue 2 · Paper ID: IJRAR25B2156',
+    researchAreas: ['Artificial Intelligence', 'Machine Learning', 'NLP', 'Fake News Detection'],
+    link: '/FakeNews_ResearchPaper.pdf'
   }
 ];
 
