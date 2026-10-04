@@ -12,7 +12,7 @@ const Achievements: React.FC<AchievementsProps> = ({ achievements }) => {
   }
 
   return (
-    <section className="achievements-section fade-in" id="achievements">
+    <section className="achievements-section" id="achievements">
       <div className="container">
         <h2 className="section-title">Achievements</h2>
         <div className="achievements-grid">

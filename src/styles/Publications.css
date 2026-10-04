@@ -104,17 +104,22 @@
   margin-top: 0.5rem;
 }
 
-.pub-link {
-  font-size: 1rem;
-  font-weight: 600;
+.pub-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--bg-tertiary);
   color: var(--accent-primary);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-accent);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: var(--transition-base);
 }
 
-.pub-link:hover {
-  color: var(--accent-purple);
-  text-decoration: underline;
+.pub-btn:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {

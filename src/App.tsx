@@ -29,32 +29,6 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    // Add scroll animation for sections
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px",
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in");
-        }
-      });
-    }, observerOptions);
-
-    document
-      .querySelectorAll(
-        ".skills-section, .experience-section, .projects-section, .publications-section, .achievements-section, .education-section"
-      )
-      .forEach((el) => {
-        observer.observe(el);
-      });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="app">
       <Header onNavClick={handleNavClick} />

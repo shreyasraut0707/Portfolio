@@ -12,7 +12,7 @@ const Publications: React.FC<PublicationsProps> = ({ publications }) => {
   }
 
   return (
-    <section className="publications-section fade-in" id="publications">
+    <section className="publications-section" id="publications">
       <div className="container">
         <h2 className="section-title">Research & Publications</h2>
         
@@ -20,7 +20,7 @@ const Publications: React.FC<PublicationsProps> = ({ publications }) => {
           {publications.map((pub) => (
             <div key={pub.id} className="publication-card">
               <div className="pub-header">
-                <h3 className="pub-title">📄 {pub.title}</h3>
+                <h3 className="pub-title">{pub.title}</h3>
                 <p className="pub-subtitle">
                   Co-Author · Published {pub.date.split(" ")[1] || "2025"}
                 </p>
@@ -49,8 +49,8 @@ const Publications: React.FC<PublicationsProps> = ({ publications }) => {
 
               {pub.link && (
                 <div className="pub-action">
-                  <a href={pub.link} target="_blank" rel="noopener noreferrer" className="pub-link">
-                    [View Paper ↗]
+                  <a href={pub.link} target="_blank" rel="noopener noreferrer" className="pub-btn">
+                    View Paper ↗
                   </a>
                 </div>
               )}
