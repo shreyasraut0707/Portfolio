@@ -28,6 +28,13 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
           </div>
           <div className="hero-cta">
             <a
+              href="/Shreyas_Raut (2).pdf"
+              download="Shreyas_Raut_Resume.pdf"
+              className="cta-button resume"
+            >
+              <span>Download Resume ↓</span>
+            </a>
+            <a
               href="https://github.com/shreyasraut0707"
               target="_blank"
               rel="noopener noreferrer"

@@ -107,6 +107,20 @@
   letter-spacing: 0.01em;
 }
 
+.cta-button.resume {
+  background: var(--accent-gradient);
+  color: white;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.25);
+  border: none;
+}
+
+.cta-button.resume:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.35);
+  filter: brightness(1.1);
+  color: white;
+}
+
 .cta-button.github {
   background: var(--text-primary);
   color: white;
