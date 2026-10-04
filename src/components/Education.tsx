@@ -69,7 +69,6 @@ const Education: React.FC<EducationProps> = ({ education }) => {
             ))}
           </div>
         </div>
-        </div>
       </div>
     </section>
   );
