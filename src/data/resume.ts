@@ -1,5 +1,4 @@
-import type { Experience, Project, Skill, Education, Certification } from '../types';
-
+import type { Experience, Project, Skill, Education, Certification, Achievement } from '../types';
 export const experiences: Experience[] = [
   {
     id: '1',
@@ -194,5 +193,14 @@ export const publications = [
     title: 'Advancing Media Integrity through AI-Powered Fake News Detection',
     date: 'Mar 2024 – Apr 2024',
     description: 'Designed and implemented ML model to detect and classify misinformation in digital media content analyzing linguistic patterns and source credibility for real-time accuracy assessments.'
+  }
+];
+
+export const achievements: Achievement[] = [
+  {
+    id: '1',
+    title: '🏆 Subject Topper Award',
+    description: 'Introduction to Industry 4.0 and Industrial IoT',
+    link: 'https://www.linkedin.com/posts/shreyas-raut-ba1103297_iiot-subjecttopper-achievement-activity-7460014554077454336-J0aW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEe9lukBuHNRXPV4qzyY6NCBMVaWSmzuZBQ'
   }
 ];

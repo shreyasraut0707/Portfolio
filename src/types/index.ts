@@ -41,3 +41,11 @@ export interface Certification {
   details?: string;
   link?: string;
 }
+
+export interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  link?: string;
+  date?: string;
+}
