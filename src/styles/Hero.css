@@ -133,17 +133,18 @@
 }
 
 .cta-button.email {
-  background: white;
-  color: var(--accent-primary);
-  border-color: var(--border-subtle);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background: #ef4444;
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.15);
 }
 
 .cta-button.email:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.15);
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.25);
+  background: #dc2626;
+  border-color: transparent;
+  color: white;
 }
 
 .hero-info {

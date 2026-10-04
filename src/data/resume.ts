@@ -144,7 +144,7 @@ export const education: Education[] = [
     institution: 'Jayawantrao Sawant Polytechnic',
     duration: 'Dec 2020 – June 2023',
     location: 'Pune, Maharashtra',
-    details: ['Percentage: 84.86%'],
+    details: ['Percentage: 85%'],
     link: '/Diploma_Certificate.jpg'
   }
 ];
@@ -159,24 +159,24 @@ export const certifications: Certification[] = [
   },
   {
     id: '2',
+    title: 'Building Generative AI Skills for Developers',
+    issuer: 'Microsoft & LinkedIn Learning',
+    date: '2024',
+    link: 'https://www.linkedin.com/learning/certificates/206f57bb7dcbaa65242d5b7d151af491f1d92ee4e63ce71248361c24b284b897?trk=share_certificate'
+  },
+  {
+    id: '3',
     title: 'Microsoft Certified: Azure AI Fundamentals (AI-900)',
     issuer: 'Microsoft',
     date: '2026',
     link: 'https://learn.microsoft.com/en-in/users/shreyasraut-0880/credentials/4aef11950cfae4ec'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Oracle Cloud Infrastructure 2025 Certified Data Science Professional',
     issuer: 'Oracle',
     date: '2025',
     link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=11A4A3E126300C2F814A4E2E9B9B6F2F8D143038F339A68F643F07F59F58D5B8'
-  },
-  {
-    id: '4',
-    title: 'Career Essentials in Generative AI',
-    issuer: 'Microsoft & LinkedIn Learning',
-    date: '2024',
-    link: '/GenAI_Certificate.pdf'
   },
   {
     id: '5',
