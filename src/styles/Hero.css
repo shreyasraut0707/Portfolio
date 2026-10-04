@@ -82,6 +82,7 @@
 
 .hero-bio p {
   margin: 0;
+  text-align: justify;
 }
 
 .hero-cta {
