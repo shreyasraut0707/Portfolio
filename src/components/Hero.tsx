@@ -19,16 +19,11 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
         <div className="hero-text">
           <h1 className="hero-title">Shreyas Raut</h1>
           <p className="hero-subtitle">
-            Undergraduate in AISSMS IOIT || Artificial Intelligence and Data
-            Science || Diploma in Computer Engineering
+            Jr Software Engineer @ Zensar Technologies | AI/ML | Java | Generative AI
           </p>
           <div className="hero-bio">
             <p>
-              AI and Data Science student with strong skills in Python, C/C++,
-              SQL, and generative AI technologies. Experienced in machine
-              learning, deep learning, computer vision, and NLP, with hands-on
-              projects and publication experience. Passionate about building
-              scalable AI solutions that solve real-world problems.
+              AI & Data Science graduate with hands-on experience in AI/ML, Generative AI, Java Full Stack Development, and backend development. Currently working as a Jr Software Engineer, G0 at Zensar Technologies, contributing to AI-driven and full-stack applications using Python, Java, Spring Boot, React, and RESTful APIs. Experienced in building scalable applications, AI/ML solutions, and LLM-based applications, with a strong foundation in software development and problem-solving.
             </p>
           </div>
           <div className="hero-cta">
@@ -63,7 +58,7 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
             <div className="info-item">
               <span className="info-label">Status:</span>
               <span className="info-value">
-                Data Science Intern @ Unified Mentor
+                Jr Software Engineer, G0 @ Zensar Technologies
               </span>
             </div>
           </div>

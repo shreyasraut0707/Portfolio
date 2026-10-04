@@ -3,27 +3,28 @@ import type { Experience, Project, Skill, Education, Certification } from '../ty
 export const experiences: Experience[] = [
   {
     id: '1',
-    title: 'Data Science Intern',
-    company: 'Unified Mentor Pvt Ltd',
-    duration: 'Sept 2025 – Present',
-    location: 'Remote',
-    type: 'Internship',
+    title: 'Jr Software Engineer, G0',
+    company: 'Zensar Technologies',
+    duration: 'Sep 2026 – Present',
+    location: 'Pune, Maharashtra',
+    type: 'Full-time',
     description: [
-      'Pursuing 3-month data science internship focusing on machine learning and data analysis projects',
-      'Developing predictive models and performing exploratory data analysis on real-world datasets',
-      'Applying statistical techniques and ML algorithms to extract insights and solve business problems'
+      'Contributing to AI-driven and full-stack application development using Generative AI, LLMs, Python, Java, Spring Boot, and React.',
+      'Developing and integrating AI/ML solutions, RESTful APIs, and web applications, focusing on scalable and reliable solutions.',
+      'Collaborating in an Agile development environment on feature implementation, AI solution development, testing, debugging, and technical documentation.'
     ]
   },
   {
     id: '2',
-    title: 'App Dev Intern',
-    company: 'Fizito Digital',
-    duration: 'Feb 2025 – Mar 2025',
+    title: 'Java Full Stack Developer Intern',
+    company: 'Zensar Technologies',
+    duration: 'Mar 2026 – Sep 2026',
     location: 'Pune, Maharashtra',
     type: 'Internship',
     description: [
-      'Built Android app to scan SMS for malicious links using VirusTotal API',
-      'Implemented real-time phishing alerts and ensured user data privacy'
+      'Developed RESTful APIs using Java and Spring Boot for a microservice-based application, ensuring secure and scalable backend services.',
+      'Built and maintained full-stack web modules using Spring Boot, React, HTML, CSS, and JavaScript, resolving application issues and improving user experience.',
+      'Collaborated in an Agile development environment, contributing to feature implementation, debugging, testing, and technical documentation.'
     ]
   }
 ];
@@ -95,31 +96,35 @@ export const projects: Project[] = [
 export const skills: Skill[] = [
   {
     category: 'Languages',
-    items: ['Python', 'C/C++', 'SQL', 'JavaScript', 'HTML/CSS', 'TypeScript']
+    items: ['Python', 'Java', 'SQL', 'C/C++', 'JavaScript', 'Kotlin']
   },
   {
-    category: 'Machine Learning & AI',
-    items: ['Machine Learning', 'Deep Learning', 'Computer Vision', 'NLP', 'Generative AI', 'LLMs', 'RAG', 'Prompt Engineering']
+    category: 'AI & Machine Learning',
+    items: ['Machine Learning', 'Deep Learning', 'TensorFlow', 'PyTorch', 'Computer Vision', 'NLP', 'Feature Engineering', 'Model Evaluation']
+  },
+  {
+    category: 'Generative AI',
+    items: ['Generative AI', 'LLMs', 'RAG', 'Prompt Engineering', 'Embeddings', 'LangChain', 'FAISS', 'Multi-Agent Systems', 'Vector Search']
+  },
+  {
+    category: 'Web & Backend',
+    items: ['Spring Boot', 'React', 'Angular', 'Flask', 'Django', 'REST APIs', 'Microservices', 'HTML', 'CSS']
+  },
+  {
+    category: 'Databases',
+    items: ['MySQL', 'MongoDB', 'SQL/DBMS']
+  },
+  {
+    category: 'Cloud & DevOps',
+    items: ['AWS', 'Docker', 'Linux', 'Git', 'GitHub', 'CI/CD', 'MLflow', 'DVC']
   },
   {
     category: 'Data Science',
-    items: ['Data Analysis', 'Data Structures', 'Big Data Analytics', 'Statistical Analysis', 'FAISS', 'Embeddings']
+    items: ['Data Analysis', 'NumPy', 'Pandas', 'Scikit-learn', 'Statistical Analysis', 'EDA']
   },
   {
-    category: 'Web Technologies',
-    items: ['ReactJS', 'HTML/CSS', 'JavaScript', 'Streamlit', 'REST APIs']
-  },
-  {
-    category: 'Developer Tools',
-    items: ['VS Code', 'PyCharm', 'Android Studio', 'Git', 'GitHub', 'Docker', 'Linux']
-  },
-  {
-    category: 'Databases & Frameworks',
-    items: ['MongoDB', 'SQL/DBMS', 'LangChain', 'OpenCV', 'DBMS']
-  },
-  {
-    category: 'Other Tools',
-    items: ['PowerBI', 'Tableau', 'Android Development', 'Prompt Engineering', 'Vector Search']
+    category: 'Testing & Tools',
+    items: ['pytest', 'Streamlit', 'Google Gemini API']
   }
 ];
 
@@ -130,7 +135,8 @@ export const education: Education[] = [
     institution: 'AISSMS Institute of Information Technology',
     duration: 'Sept 2023 – June 2026',
     location: 'Pune, Maharashtra',
-    details: ['CGPA: 8.17']
+    details: ['CGPA: 8.46'],
+    link: '/Degree_Certificate.pdf'
   },
   {
     id: '2',
@@ -146,27 +152,34 @@ export const education: Education[] = [
 export const certifications: Certification[] = [
   {
     id: '1',
-    title: 'Career Essentials in Generative AI',
+    title: 'Career Essentials in GitHub Professional Certificate',
     issuer: 'Microsoft & LinkedIn Learning',
-    date: '2024',
-    link: '/GenAI_Certificate.pdf'
+    date: '2026',
+    link: 'https://www.linkedin.com/learning/certificates/5ef2b1df7984c5432fe5c2ddf8091f6635a2674cf25aa801d8cce660387c55e4?trk=share_certificate'
   },
   {
     id: '2',
+    title: 'Microsoft Certified: Azure AI Fundamentals (AI-900)',
+    issuer: 'Microsoft',
+    date: '2026',
+    link: 'https://learn.microsoft.com/en-in/users/shreyasraut-0880/credentials/4aef11950cfae4ec'
+  },
+  {
+    id: '3',
     title: 'Oracle Cloud Infrastructure 2025 Certified Data Science Professional',
     issuer: 'Oracle',
     date: '2025',
     link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=11A4A3E126300C2F814A4E2E9B9B6F2F8D143038F339A68F643F07F59F58D5B8'
   },
   {
-    id: '3',
-    title: 'Database Programming with SQL',
-    issuer: 'Oracle Academy',
-    date: 'Mar 2024',
-    link: '/Oracle_Certificate.pdf'
+    id: '4',
+    title: 'Career Essentials in Generative AI',
+    issuer: 'Microsoft & LinkedIn Learning',
+    date: '2024',
+    link: '/GenAI_Certificate.pdf'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Deep Certificate in Python Programming',
     issuer: 'MKCL',
     date: '2024',

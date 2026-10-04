@@ -16,8 +16,7 @@ import {
 import "./App.css";
 
 function App() {
-  const profileImagePath = new URL("./assets/profile.jpg", import.meta.url)
-    .href;
+  const profileImagePath = "/1000086283.jpg.jpeg";
 
   const handleNavClick = (section: string) => {
     const element = document.getElementById(section);

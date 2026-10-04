@@ -1,55 +1,77 @@
-:root {
-  /* Colors */
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --primary-light: #818cf8;
-  --secondary: #ec4899;
-  --dark: #0f172a;
-  --dark-secondary: #1e293b;
-  --dark-tertiary: #334155;
-  --light: #f8fafc;
-  --light-secondary: #e2e8f0;
-  --text: #1e293b;
-  --text-light: #64748b;
-  --text-lighter: #94a3b8;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
+/* ============================================
+   DESIGN SYSTEM — 2026 Light Fresh Theme
+   ============================================ */
 
-  /* Spacing */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
-  --spacing-4xl: 6rem;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Color Palette — Clean white with vibrant fresh accents */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.5);
+  --bg-glass-hover: rgba(255, 255, 255, 0.8);
+  
+  /* Accent Colors */
+  --accent-primary: #4f46e5;
+  --accent-secondary: #0ea5e9;
+  --accent-tertiary: #ec4899;
+  --accent-purple: #8b5cf6;
+  --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #0ea5e9 50%, #8b5cf6 100%);
+  --accent-gradient-text: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 100%);
+  --accent-glow: rgba(79, 70, 229, 0.15);
+
+  /* Text Colors */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-accent: #4f46e5;
+  
+  /* Border Colors */
+  --border-subtle: rgba(148, 163, 184, 0.15);
+  --border-hover: rgba(79, 70, 229, 0.3);
+  --border-accent: rgba(79, 70, 229, 0.5);
 
   /* Typography */
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-mono: 'Monaco', 'Menlo', 'Consolas', monospace;
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
 
   /* Transitions */
-  --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --transition-smooth: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s var(--ease-out);
+  --transition-base: all 0.35s var(--ease-out);
+  --transition-slow: all 0.5s var(--ease-out);
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 0 40px rgba(79, 70, 229, 0.15);
+  
   /* Border Radius */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
-  --radius-2xl: 2rem;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-full: 9999px;
 }
 
-* {
+/* ============ Reset ============ */
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -57,56 +79,81 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: var(--font-family);
-  background-color: #ffffff;
-  color: var(--text);
-  line-height: 1.6;
+  font-family: var(--font-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
   overflow-x: hidden;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Noise texture overlay for a subtle premium feel */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
+  background-repeat: repeat;
 }
 
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
 }
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 var(--space-xl);
 }
 
-/* Utility Classes */
+/* ============ Utility Styles ============ */
 .section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: var(--accent-gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--space-md);
   text-align: center;
+  position: relative;
 }
 
 .section-subtitle {
   text-align: center;
-  color: var(--text-light);
-  font-size: 1.1rem;
-  margin-bottom: var(--spacing-2xl);
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: var(--space-3xl);
+  letter-spacing: 0.01em;
 }
 
 .fade-in {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.8s var(--ease-out) both;
 }
 
-/* Animations */
+/* ============ Animations ============ */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -132,7 +179,7 @@ main {
 @keyframes slideInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -143,7 +190,7 @@ main {
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-24px);
   }
   to {
     opacity: 1;
@@ -154,7 +201,7 @@ main {
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.92);
   }
   to {
     opacity: 1;
@@ -162,92 +209,75 @@ main {
   }
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes glow {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
-  }
-  50% {
-    box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
-  }
-}
-
-/* Scrollbar Styling */
+/* ============ Scrollbar ============ */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--light);
+  background: var(--bg-tertiary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: #cbd5e1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-dark);
+  background: #94a3b8;
 }
 
-/* Text Selection */
+/* ============ Text Selection ============ */
 ::selection {
-  background-color: var(--primary);
-  color: white;
+  background-color: rgba(79, 70, 229, 0.2);
+  color: var(--accent-primary);
 }
 
 ::-moz-selection {
-  background-color: var(--primary);
-  color: white;
+  background-color: rgba(79, 70, 229, 0.2);
+  color: var(--accent-primary);
 }
 
-/* Links */
+/* ============ Links ============ */
 a {
   text-decoration: none;
-  transition: var(--transition);
+  transition: var(--transition-base);
+  color: inherit;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
-/* Responsive */
+/* ============ Responsive ============ */
 @media (max-width: 1024px) {
   :root {
-    --spacing-3xl: 3rem;
-    --spacing-4xl: 4.5rem;
+    --space-3xl: 3rem;
+    --space-4xl: 4.5rem;
+  }
+  .section-title {
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 768px) {
   :root {
-    --spacing-2xl: 2rem;
-    --spacing-3xl: 2.5rem;
-    --spacing-4xl: 3rem;
+    --space-2xl: 2rem;
+    --space-3xl: 2.5rem;
+    --space-4xl: 3rem;
   }
-
   .section-title {
-    font-size: 1.875rem;
+    font-size: 1.8rem;
   }
-
   .container {
-    padding: 0 var(--spacing-md);
+    padding: 0 var(--space-md);
   }
 }
 
 @media (max-width: 480px) {
   :root {
-    --spacing-xl: 1.5rem;
-    --spacing-2xl: 1.5rem;
-    --spacing-3xl: 2rem;
+    --space-xl: 1.5rem;
+    --space-2xl: 1.5rem;
+    --space-3xl: 2rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
   }
 }
