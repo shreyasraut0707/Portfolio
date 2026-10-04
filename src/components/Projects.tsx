@@ -19,7 +19,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
     <section className="projects-section" id="projects">
       <div className="container">
-        <h2 className="section-title">Featured Projects</h2>
+        <h2 className="section-title">Projects</h2>
         <p className="section-subtitle">
           Innovative solutions built with cutting-edge technologies
         </p>
