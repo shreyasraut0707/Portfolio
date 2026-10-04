@@ -11,29 +11,18 @@ interface EducationItem {
   link?: string;
 }
 
-interface CertificationItem {
-  id: string;
-  title: string;
-  issuer: string;
-  date: string;
-  details?: string;
-  link?: string;
-}
-
 interface EducationProps {
   education: EducationItem[];
-  certifications: CertificationItem[];
 }
 
-const Education: React.FC<EducationProps> = ({ education, certifications }) => {
+const Education: React.FC<EducationProps> = ({ education }) => {
   return (
     <section className="education-section" id="education">
       <div className="container">
-        <h2 className="section-title">Education & Certifications</h2>
+        <h2 className="section-title">Education</h2>
 
         {/* Education */}
         <div className="education-content">
-          <h3 className="subsection-title">Education</h3>
           <div className="education-list">
             {education.map((edu) => (
               <div key={edu.id} className="education-item">
@@ -80,41 +69,6 @@ const Education: React.FC<EducationProps> = ({ education, certifications }) => {
             ))}
           </div>
         </div>
-
-        {/* Certifications */}
-        <div className="certifications-content">
-          <h3 className="subsection-title">Certifications</h3>
-          <div className="certifications-grid">
-            {certifications.map((cert) =>
-              cert.link ? (
-                <a
-                  key={cert.id}
-                  href={cert.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="certification-item certification-clickable"
-                >
-                  <div className="cert-icon">📜</div>
-                  <h4 className="cert-title">{cert.title}</h4>
-                  <p className="cert-issuer">{cert.issuer}</p>
-                  <p className="cert-date">{cert.date}</p>
-                  {cert.details && (
-                    <p className="cert-details">{cert.details}</p>
-                  )}
-                </a>
-              ) : (
-                <div key={cert.id} className="certification-item">
-                  <div className="cert-icon">📜</div>
-                  <h4 className="cert-title">{cert.title}</h4>
-                  <p className="cert-issuer">{cert.issuer}</p>
-                  <p className="cert-date">{cert.date}</p>
-                  {cert.details && (
-                    <p className="cert-details">{cert.details}</p>
-                  )}
-                </div>
-              )
-            )}
-          </div>
         </div>
       </div>
     </section>

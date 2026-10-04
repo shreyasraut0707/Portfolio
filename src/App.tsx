@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Publications from "./components/Publications";
 import Achievements from "./components/Achievements";
 import Education from "./components/Education";
+import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
 import {
   experiences,
@@ -38,7 +39,8 @@ function App() {
         <Projects projects={projects} />
         <Publications publications={publications} />
         <Achievements achievements={achievements} />
-        <Education education={education} certifications={certifications} />
+        <Education education={education} />
+        <Certifications certifications={certifications} />
       </main>
       <Footer />
     </div>
