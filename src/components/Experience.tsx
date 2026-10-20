@@ -48,29 +48,12 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
                 <ContentTag {...linkProps}>
                   <div className="experience-header">
                     <div>
-                      <h3 className="experience-title">
-                        {exp.title}
-                        {exp.link && (
-                          <span
-                            className="experience-external-icon"
-                            title="View Certificate"
-                          >
-                            ↗
-                          </span>
-                        )}
-                      </h3>
+                      <h3 className="experience-title">{exp.title}</h3>
                       <p className="experience-company">{exp.company}</p>
                     </div>
-                    <div className="experience-badges">
-                      {exp.link && (
-                        <span className="experience-cert-badge">
-                          📜 Certificate
-                        </span>
-                      )}
-                      {exp.type && (
-                        <span className="experience-badge">{exp.type}</span>
-                      )}
-                    </div>
+                    {exp.type && (
+                      <span className="experience-badge">{exp.type}</span>
+                    )}
                   </div>
                   <div className="experience-meta">
                     <span className="meta-item">{exp.duration}</span>
@@ -81,13 +64,6 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
                       <li key={i}>{desc}</li>
                     ))}
                   </ul>
-                  {exp.link && (
-                    <div className="experience-cert-footer">
-                      <span className="cert-view-btn">
-                        View Internship Completion Certificate ↗
-                      </span>
-                    </div>
-                  )}
                 </ContentTag>
               </div>
             );
