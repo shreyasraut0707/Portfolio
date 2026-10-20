@@ -33,7 +33,7 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
               rel="noopener noreferrer"
               className="cta-button resume"
             >
-              <span>Resume</span>
+              <span>Portfolio</span>
             </a>
             <a
               href="https://github.com/shreyasraut0707"
