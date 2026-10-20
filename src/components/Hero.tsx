@@ -52,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
               <span>LinkedIn</span>
             </a>
             <a
-              href="mailto:shreyasraut0007@gmail.com"
+              href="#connect"
               className="cta-button email"
             >
               <span>Email</span>
